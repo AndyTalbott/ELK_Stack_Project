@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![](Images/Diagram.png)
+![](Images/Diagram3.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yaml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -56,11 +56,11 @@ A summary of the access policies in place can be found in the table below.
 | Name               | Publicly Accessible|       Allowed IP Addresses        |
 |--------------------|--------------------|-----------------------------------|
 | Jump Box           | Yes                | My Home IP Address                |
-| Web1               | No                 | Jump Box and Load Balancer        |
-| Web2               | No                 | Jump Box and Load Balancer        |
-| Web3               | No                 | Jump Box and Load Balancer        |
-| ELK-1              | No                 |                      |
-| LoadBalancer       | Yes                | 
+| Web1               | No                 | Jump box, Load Balancer           |
+| Web2               | No                 | Jump box, Load Balancer           |
+| Web3               | No                 | Jump box, Load Balancer           |
+| ELK-1              | Yes                | My Home IP Address, Jump box      |
+| LoadBalancer       | Yes                | My Home IP Address                |
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
